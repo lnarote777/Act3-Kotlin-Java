@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class Ej7 {
     public static void main(String[] args) {
         System.out.print("Escriba una cadena: ");
-        String cadena = new Scanner(System.in).nextLine();
+        Scanner sc = new Scanner(System.in);
+        String cadena = sc.nextLine();
         String reverse = "";
 
 

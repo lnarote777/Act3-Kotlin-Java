@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class Ej9 {
     public static void main(String[] args) {
         System.out.print("Escribe un número: ");
-        String respuesta  = new Scanner(System.in).nextLine();
+        Scanner sc = new Scanner(System.in);
+        String respuesta  = sc.nextLine();
         int numero = Integer.parseInt(respuesta);
         boolean esPrimo = true;
 

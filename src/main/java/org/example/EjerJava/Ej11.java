@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class Ej11 {
     public static void main(String[] args) {
         System.out.print("Ingrese un número: ");
-        String respuesta = new Scanner(System.in).nextLine();
+        Scanner sc = new Scanner(System.in);
+        String respuesta = sc.nextLine();
         int numero = Integer.parseInt(respuesta);
 
         String fibonacci = "0 1 ";

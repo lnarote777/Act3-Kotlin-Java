@@ -21,14 +21,16 @@ public class Ej13 {
     public static void main(String[] args) {
         System.out.println("Añadir anime");
         System.out.print("Nombre: ");
-        String nombre = new Scanner(System.in).nextLine();
+        Scanner sc = new Scanner(System.in);
+        String nombre = sc.nextLine();
 
         System.out.print("Episodios: ");
-        int episodios = new Scanner(System.in).nextInt();
+        int episodios = sc.nextInt();
 
         System.out.print("Género: ");
-        String genero = new Scanner(System.in).nextLine();
+        String genero = sc.nextLine();
 
+        sc.close();
         Anime anime = new Anime(nombre, episodios, genero);
 
         anime.mostrarInfo();

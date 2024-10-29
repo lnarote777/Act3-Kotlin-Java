@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class Ej4 {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
         int num = new Random().nextInt(0, 101);
 
@@ -14,7 +15,7 @@ public class Ej4 {
 
         boolean acertado = false;
         while(!acertado) {
-            String respuesta  = new Scanner(System.in).nextLine();
+            String respuesta  = sc.nextLine();
             int numero = Integer.parseInt(respuesta);
 
             if (numero == num) {
